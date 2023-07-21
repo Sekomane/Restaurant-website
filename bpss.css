@@ -1,0 +1,95 @@
+.logo{
+    width: 300px;
+    height: 170px;
+    margin-left: 520px;
+}
+.head1{
+    text-align: center;
+    color:midnightblue;
+    font-size: 26px;
+   color:rgb(66, 6, 16);
+}
+h2{
+    text-align: center;
+    color:midnightblue;
+    font-size: 41px;
+    margin-top: -20px;
+}
+.para{
+    font-size: 50px;
+    color:midnightblue;
+    text-align: center;
+}
+.par{
+    text-align: center;
+    margin-top: -50px;
+    color:red;
+ }
+ .time{
+    text-align: center;
+    color:red;
+        
+}
+
+.price{
+    text-align: center;
+    font-size: 50px;
+    color:green;
+    margin-bottom: 0px;
+
+}
+.inf{
+    text-align: center;
+    color:white;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.cont{
+    text-align: center;
+    color:red;
+}
+footer{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+}
+.from{
+    color: blue;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.a{
+    text-align: center;
+    color:green
+}
+.nego{
+    text-align: center;
+    color: white;
+}
+.wpp{
+width: 23px;
+height: 23px;
+margin-bottom: -3px;
+}
+.email{
+ width: 23px;
+ height: 23px;
+ margin-bottom: -3px;
+margin-top: -20px;
+color:blanchedalmond;
+}
+.instagr{
+    width: 23px;
+ height: 23px;
+ margin-bottom: -3px
+
+}
+html{
+    background-image: url('IMG-20230628-WA0003.jpg');
+}
