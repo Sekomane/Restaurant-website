@@ -1,7 +1,5 @@
 # Smirth Exclusive Chilla' - Food Shop Website
 
-![Website Preview](OGC%20(5).gif)
-
 A simple food shop website showcasing deals and products available at Smirth Exclusive Chilla'.
 
 ## Live Demo
