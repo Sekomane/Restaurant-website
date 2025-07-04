@@ -10,7 +10,96 @@
  <table>
    <tr>
    <td> <a href="first_rest.html">🏡 <br/>Home</a> </td>
-<td></td>
+<td></td><!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Savana</title>
+  <link rel="stylesheet" href="savan.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="first_rest.html">🏡 <br>Home</a>
+    <a href="#">✉<br>Messages</a>
+    <a href="#" onclick="cart()" id="cart">🛒 <br>Carts</a>
+    <a href="account.html">🙍🏿‍♂️ <br>Account</a>
+  </nav>
+
+  <!-- Product Image and Info -->
+  <h1><img class="savana" src="OGC (4).gif" alt="Savana"></h1><hr/>
+  <figcaption><b>Now R35.00 </b><s>was R40.00</s></figcaption>
+
+  <p class="kind"><b>Savana Dry 275ml</b></p>
+  <p class="infor">🔞 Age restricted for persons under 18</p>
+  <p class="infor">⏱ <b>Free Delivery from 08:00 to 16:30</b></p>
+
+  <h2>About our product</h2>
+  <p class="about">Savana Dry is made with freshly picked apples and retains the original apple taste.</p>
+  <hr/>
+
+  <!-- Order Inputs -->
+  <p>
+    <input id="juice" class="items" type="number" value="0" min="0" max="10">
+    <input class="cart" type="button" value="Add to cart" onclick="price()">
+  </p>
+
+  <p><b>TOTAL INCLUDING VAT</b></p>
+  <p>
+    <input id="calc" class="tot" type="text" readonly placeholder="R 0.00">
+    <input class="subm" type="submit" value="PLACE ORDER" onclick="placeOrder()">
+  </p>
+
+  <script>
+    function price() {
+      const qty = parseInt(document.getElementById("juice").value);
+      const total = qty * 35.00;
+      document.getElementById("calc").value = "R " + total.toFixed(2);
+    }
+
+    function placeOrder() {
+      const qty = parseInt(document.getElementById("juice").value);
+      if (!qty || qty <= 0) {
+        alert("We can't proceed without an order.");
+        return;
+      }
+
+      const total = qty * 35.00;
+      document.body.innerHTML = `
+        <h1>Thank You!</h1>
+        <p>We are now preparing your order. We will notify you when it's ready.</p>
+        <p>Your total amount for ${qty} item(s) is <b>R ${total.toFixed(2)}</b>.</p>
+      `;
+    }
+
+    function cart() {
+      const qty = parseInt(document.getElementById("juice").value);
+      if (!qty || qty <= 0) {
+        document.body.innerHTML = "<h1>The cart is empty</h1>";
+        return;
+      }
+
+      const base = qty * 35.00;
+      const fee = base * 0.15;
+      const total = base + fee;
+
+      document.body.innerHTML = `
+        <h1>Smirth Exclusive Chilla's</h1>
+        <p>Order Type: Takeaway</p>
+        <p>Number of items ordered: ${qty}</p>
+        <p>Service Fee: R ${fee.toFixed(2)}</p>
+        <p>Amount before Fee: R ${base.toFixed(2)}</p>
+        <p><strong>Total Amount: R ${total.toFixed(2)}</strong></p>
+        <p>Thank you for your support!</p>
+      `;
+    }
+  </script>
+
+</body>
+</html>
+
 <td></td>
    <td></td>
    <td> <a href="#"> ✉<br/>Massages</a> </td>
