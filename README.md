@@ -26,6 +26,7 @@ You can access the live website here:
 - HTML5
 - CSS
 - GitHub Pages (for hosting)
+- Javascript 
 
 ## How to Use
 
