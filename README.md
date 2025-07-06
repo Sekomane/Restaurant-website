@@ -5,7 +5,7 @@ A simple food shop website showcasing deals and products available at Smirth Exc
 ## Live Demo
 
 You can access the live website here:  
-🔗 [https://sekomane.github.io/rest-website/first_rest.html](https://sekomane.github.io/rest-website/first_rest.html)
+🔗 [https://sekomane.github.io/rest-website/first_rest.html]( https://sekomane.github.io/Restaurant-website/ )
 
 ## Features
 
